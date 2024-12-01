@@ -1,6 +1,10 @@
+import 'dart:async';
+
 import 'package:ecocycle_app/core/constant.dart';
+import 'package:ecocycle_app/core/utils/app_router.dart';
 import 'package:ecocycle_app/features/on_boarding/widgets/walk_througth.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class OnBordingView extends StatefulWidget {
@@ -21,6 +25,10 @@ class _OnBordingViewState extends State<OnBordingView> {
       setState(() {
         pageIndex = pageController.page!.toInt();
       });
+    });
+
+    Timer(Duration(seconds: 3), () {
+      GoRouter.of(context).push(AppRouter.kHomeView);
     });
   }
 
@@ -58,9 +66,9 @@ class _OnBordingViewState extends State<OnBordingView> {
           child: TextButton(
               onPressed: () {
                 if (pageIndex == 0) {
-                  pageController.jumpToPage(2);
+                  pageController.jumpToPage(++pageIndex);
                 } else {
-                  pageController.jumpToPage(--pageIndex);
+                  pageController.jumpToPage(2);
                 }
               },
               child: Text('Skip',
@@ -71,7 +79,7 @@ class _OnBordingViewState extends State<OnBordingView> {
         ),
         Positioned(
           bottom: 40,
-          left: 25,
+          left: 37,
           child: SmoothPageIndicator(
             controller: pageController,
             count: 3,

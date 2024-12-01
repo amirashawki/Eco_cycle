@@ -1,5 +1,9 @@
+import 'dart:async';
+
+import 'package:ecocycle_app/core/utils/app_router.dart';
 import 'package:ecocycle_app/features/on_boarding/on_bording_view.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class SplashView2 extends StatefulWidget {
@@ -10,6 +14,14 @@ class SplashView2 extends StatefulWidget {
 }
 
 class SplashView2State extends State<SplashView2> {
+  void initState() {
+    super.initState();
+
+    Timer(Duration(seconds: 3), () {
+      GoRouter.of(context).push(AppRouter.kOnBordingView);
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
