@@ -29,9 +29,7 @@ class _PointsSectionState extends State<PointsSection> {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         GestureDetector(
-          onTap: () {
-            _incrementCounter();
-          },
+          onTap: () {},
           child: Container(
               decoration: BoxDecoration(
                   shape: BoxShape.circle,
@@ -41,7 +39,7 @@ class _PointsSectionState extends State<PointsSection> {
               child: Container(
                 height: 25,
                 child: IconButton(
-                  onPressed: () {},
+                  onPressed: _incrementCounter,
                   icon: Icon(
                     Icons.add,
                     size: 15, // Size of the icon
@@ -62,9 +60,6 @@ class _PointsSectionState extends State<PointsSection> {
           width: 8,
         ),
         GestureDetector(
-          onTap: () {
-            _decrementCounter();
-          },
           child: Container(
               decoration: BoxDecoration(
                   shape: BoxShape.circle,
@@ -74,7 +69,7 @@ class _PointsSectionState extends State<PointsSection> {
               child: Container(
                 height: 25,
                 child: IconButton(
-                  onPressed: () {},
+                  onPressed: _decrementCounter,
                   icon: Icon(
                     Icons.remove,
                     size: 15, // Size of the icon
