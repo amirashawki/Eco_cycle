@@ -1,5 +1,6 @@
 import 'package:ecocycle_app/core/constant.dart';
 import 'package:ecocycle_app/features/home/views/widgets/balance_card.dart';
+
 import 'package:ecocycle_app/features/home/views/widgets/materials.dart';
 import 'package:flutter/material.dart';
 
@@ -77,7 +78,8 @@ class HomeViewBody extends StatelessWidget {
                 ),
               ],
             ),
-            // BalanceCard()
+            SizedBox(height: 20),
+            Center(child: BalanceCard())
           ],
         ),
       ),
