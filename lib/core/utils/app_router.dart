@@ -1,3 +1,4 @@
+import 'package:ecocycle_app/features/on_boarding/on_bording_view.dart';
 import 'package:ecocycle_app/features/splash/views/splash_view.dart';
 import 'package:ecocycle_app/features/splash/views/widgets/splash_view_2.dart';
 import 'package:go_router/go_router.dart';
@@ -10,7 +11,7 @@ abstract class AppRouter {
   static final router = GoRouter(routes: [
     GoRoute(
       path: '/',
-      builder: (context, State) => const SplashView2(),
+      builder: (context, State) => OnBordingView(),
     ),
   ]);
 }
