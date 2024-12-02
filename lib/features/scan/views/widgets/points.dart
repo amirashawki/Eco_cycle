@@ -37,7 +37,7 @@ class _PointsSectionState extends State<PointsSection> {
                   ),
               padding: EdgeInsets.all(7), // Padding inside the circle
               child: Container(
-                height: 25,
+                height: 20,
                 child: IconButton(
                   onPressed: _incrementCounter,
                   icon: Icon(
@@ -67,7 +67,7 @@ class _PointsSectionState extends State<PointsSection> {
                   ),
               padding: EdgeInsets.all(7), // Padding inside the circle
               child: Container(
-                height: 25,
+                height: 20,
                 child: IconButton(
                   onPressed: _decrementCounter,
                   icon: Icon(

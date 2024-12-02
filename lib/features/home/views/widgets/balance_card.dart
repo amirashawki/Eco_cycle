@@ -1,3 +1,4 @@
+import 'package:ecocycle_app/features/home/views/widgets/upload_section.dart';
 import 'package:flutter/material.dart';
 
 class BalanceCard extends StatelessWidget {
@@ -5,8 +6,8 @@ class BalanceCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: 240,
-      height: 150,
-      padding: EdgeInsets.all(20),
+      height: 130,
+      padding: EdgeInsets.all(10),
       decoration: BoxDecoration(
         color: Color(0xffECF7DD),
         borderRadius: BorderRadius.circular(20),
@@ -17,7 +18,7 @@ class BalanceCard extends StatelessWidget {
           Text(
             'Your Balance',
             style: TextStyle(
-              fontSize: 12,
+              fontSize: 10,
               fontWeight: FontWeight.bold,
             ),
           ),
@@ -25,11 +26,12 @@ class BalanceCard extends StatelessWidget {
           Text(
             '250.000',
             style: TextStyle(
-                fontSize: 16, color: Colors.black, fontWeight: FontWeight.bold),
+                fontSize: 22, color: Colors.black, fontWeight: FontWeight.bold),
           ),
           SizedBox(height: 5),
           points(),
-          SizedBox(height: 20),
+          SizedBox(height: 10),
+          UploadSection()
         ],
       ),
     );
@@ -44,21 +46,22 @@ class points extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 100,
+      width: 77,
+      height: 15,
       decoration: BoxDecoration(
-          color: Color(0xffFFC374), borderRadius: BorderRadius.circular(7)),
+          color: Color(0xffFFC374), borderRadius: BorderRadius.circular(5)),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Image.asset('assets/images/Vector (3).png'),
           Text(
             '200 points',
-            style: TextStyle(color: Colors.white, fontSize: 12),
+            style: TextStyle(color: Colors.white, fontSize: 10),
           ),
           Image.asset(
             'assets/images/Vector (4).png',
-            height: 9,
-            width: 9,
+            height: 8,
+            width: 8,
           )
         ],
       ),
