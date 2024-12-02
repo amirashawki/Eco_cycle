@@ -1,8 +1,25 @@
-import 'package:ecocycle_app/core/constant.dart';
-import 'package:flutter/material.dart';
+import 'dart:async';
 
-class ScanSuccess extends StatelessWidget {
+import 'package:ecocycle_app/core/constant.dart';
+import 'package:ecocycle_app/core/utils/app_router.dart';
+import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+
+class ScanSuccess extends StatefulWidget {
   const ScanSuccess({super.key});
+
+  @override
+  State<ScanSuccess> createState() => _ScanSuccessState();
+}
+
+class _ScanSuccessState extends State<ScanSuccess> {
+  void initState() {
+    super.initState();
+
+    Timer(Duration(seconds: 3), () {
+      GoRouter.of(context).push(AppRouter.kEcocycleAwardsView);
+    });
+  }
 
   @override
   Widget build(BuildContext context) {

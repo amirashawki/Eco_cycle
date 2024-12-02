@@ -1,4 +1,5 @@
-import 'package:ecocycle_app/features/splash/views/widgets/splash_view_body.dart';
+import 'package:ecocycle_app/features/splash/views/widgets/splash_view_2.dart';
+
 import 'package:flutter/material.dart';
 
 class SplashView extends StatelessWidget {
@@ -6,6 +7,6 @@ class SplashView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SplashViewBody();
+    return const SplashView2();
   }
 }

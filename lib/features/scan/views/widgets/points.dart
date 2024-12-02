@@ -29,7 +29,9 @@ class _PointsSectionState extends State<PointsSection> {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         GestureDetector(
-          onTap: () {},
+          onTap: () {
+            _incrementCounter();
+          },
           child: Container(
               decoration: BoxDecoration(
                   shape: BoxShape.circle,
@@ -38,13 +40,10 @@ class _PointsSectionState extends State<PointsSection> {
               padding: EdgeInsets.all(7), // Padding inside the circle
               child: Container(
                 height: 20,
-                child: IconButton(
-                  onPressed: _incrementCounter,
-                  icon: Icon(
-                    Icons.add,
-                    size: 15, // Size of the icon
-                    color: kPrimaryColor, // Icon color
-                  ),
+                child: Icon(
+                  Icons.add,
+                  size: 15, // Size of the icon
+                  color: kPrimaryColor, // Icon color
                 ),
               )),
         ),
@@ -60,6 +59,9 @@ class _PointsSectionState extends State<PointsSection> {
           width: 8,
         ),
         GestureDetector(
+          onTap: () {
+            _decrementCounter();
+          },
           child: Container(
               decoration: BoxDecoration(
                   shape: BoxShape.circle,
@@ -68,13 +70,10 @@ class _PointsSectionState extends State<PointsSection> {
               padding: EdgeInsets.all(7), // Padding inside the circle
               child: Container(
                 height: 20,
-                child: IconButton(
-                  onPressed: _decrementCounter,
-                  icon: Icon(
-                    Icons.remove,
-                    size: 15, // Size of the icon
-                    color: kPrimaryColor, // Icon color
-                  ),
+                child: Icon(
+                  Icons.remove,
+                  size: 15, // Size of the icon
+                  color: kPrimaryColor, // Icon color
                 ),
               )),
         )

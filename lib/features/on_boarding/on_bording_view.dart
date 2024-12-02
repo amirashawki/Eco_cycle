@@ -28,7 +28,7 @@ class _OnBordingViewState extends State<OnBordingView> {
     });
 
     Timer(Duration(seconds: 3), () {
-      GoRouter.of(context).push(AppRouter.kHomeView);
+      GoRouter.of(context).push(AppRouter.kBOttomNavigationBar);
     });
   }
 
