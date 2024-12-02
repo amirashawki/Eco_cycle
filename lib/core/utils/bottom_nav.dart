@@ -66,7 +66,7 @@ class _BOttomNavigationBarState extends State<BOttomNavigationBar> {
               label: '',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.messenger_outline),
+              icon: Icon(Icons.more_vert_rounded),
               label: '',
             ),
           ],
