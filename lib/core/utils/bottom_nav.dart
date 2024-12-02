@@ -53,12 +53,12 @@ class _BOttomNavigationBarState extends State<BOttomNavigationBar> {
               label: '',
             ),
             BottomNavigationBarItem(
-              icon: IconButton(
-                  onPressed: () {
+              icon: GestureDetector(
+                  onTap: () {
                     pickImageFromCamera();
                     GoRouter.of(context).push(AppRouter.kScanProductView);
                   },
-                  icon: Icon(Icons.camera_alt_outlined)),
+                  child: Icon(Icons.camera_alt_outlined)),
               label: '',
             ),
             BottomNavigationBarItem(
