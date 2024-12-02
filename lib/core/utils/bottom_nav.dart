@@ -1,4 +1,5 @@
 import 'package:ecocycle_app/core/constant.dart';
+import 'package:ecocycle_app/features/scan/views/scan_product_view.dart';
 import 'package:ecocycle_app/features/scan/views/scan_view.dart';
 import 'package:flutter/material.dart';
 
@@ -11,6 +12,7 @@ class _BOttomNavigationBarState extends State<BOttomNavigationBar> {
   int _selectedIndex = 0;
   List<Widget> bodyContent = [
     ScanView(),
+    ScanProductView(),
   ];
 
   void _onItemTapped(int index) {
@@ -28,10 +30,10 @@ class _BOttomNavigationBarState extends State<BOttomNavigationBar> {
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
-            label: 'Home',
+            label: '',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.calendar_month),
+            icon: Icon(Icons.qr_code_scanner_outlined),
             label: '',
           ),
           BottomNavigationBarItem(

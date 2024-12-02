@@ -3,14 +3,14 @@ import 'package:ecocycle_app/core/constant.dart';
 import 'package:ecocycle_app/features/scan/views/widgets/points.dart';
 import 'package:flutter/material.dart';
 
-class PointsView extends StatefulWidget {
-  const PointsView({super.key});
+class ScanProductView extends StatefulWidget {
+  const ScanProductView({super.key});
 
   @override
-  State<PointsView> createState() => _PointsViewState();
+  State<ScanProductView> createState() => _ScanProductViewState();
 }
 
-class _PointsViewState extends State<PointsView> {
+class _ScanProductViewState extends State<ScanProductView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
